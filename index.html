@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <button onclick="myFunction('janet')">trigger function </button>
+    <button onclick="myFunction('i am a student')">Press me</button> -->
+    <div class="container">
+        <input  id="display"></input>
+        <span class="no">
+        <button onclick="displayNumber('%')"id="pec">%</button>
+        <button onclick="deleteNumberAll()"id="cancel">C</button>
+        <button onclick="deleteNumber()"id="delete"><img src="./image/iconmonstr-backspace-lined-24.png" width="20px" style="justify-self: center;"></button>
+        <button onclick="displayNumber('*')"id="times">*</button>
+        <button onclick="displayNumber(7)" id="seven">7</button>
+        <button onclick="displayNumber(8)"id="eight">8</button>
+        <button onclick="displayNumber(9)"id="nine">9</button>
+        <button onclick="displayNumber('-')"id="minus">-</button>
+        <button onclick="displayNumber(4)"id="four">4</button>
+        <button onclick="displayNumber(5)"id="five">5</button>
+        <button onclick="displayNumber(6)"id="six">6</button>
+        <button onclick="displayNumber('+')"id="add">+</button>
+        <button onclick="displayNumber(1)"id="one">1</button>
+        <button onclick="displayNumber(2)"id="two">2</button>
+        <button onclick="displayNumber(3)"id="three">3</button>
+        <button onclick="calculate('=')"id="equl">=</button>
+        <button onclick="displayNumber('.')"id="dot">.</button>
+        <button onclick="displayNumber(0)"id="zero">0</button>
+        <button onclick="displayNumber('/')"id="divide">/</button>
+        </span>
+    </div>
+
+    <script>
+        //function myFunction(input){
+        //    console.log(input);
+        //}
+        function displayNumber(number){
+            document.getElementById('display').value += number;
+        }
+        function calculate(){
+            const calculation = document.getElementById('display').value;
+            const result = eval(calculation);
+            document.getElementById('display').value = result
+        }
+        function deleteNumber(){
+            let input = document.getElementById('display').value
+            let newNumber = input.slice(0,-1)
+            document.getElementById('display').value = newNumber
+        }
+        function deleteNumberAll(){
+            let input = document.getElementById('display').value
+            let newNumber = input.slice(0,0)
+            document.getElementById('display').value = newNumber
+        }
+    </script>
+</body>
+</html>

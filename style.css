@@ -1,0 +1,118 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    box-shadow: 0px 0px 0px ;
+    background-color: rgb(45, 44, 44);
+    width: 300px;
+    height: 410px;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    margin-top: 100px;
+    padding-top: 30px;
+    border-radius: 20px;
+    
+}
+#display{
+    width: 270px;
+    height: 90px;
+    border-radius: 10px;
+    
+    
+}
+.no{
+    justify-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 10px;
+    padding-top: 15px;
+}
+#nine{
+    padding: 20px;
+    height: 20px;
+}
+#eight{
+    padding: 20px;
+    height: 20px;
+}
+#seven{
+    padding: 20px;
+    height: 20px;
+}
+#six{
+    padding: 20px;
+    height: 20px;
+}
+#five{
+    padding: 20px;
+    height: 20px;
+}
+#four{
+    padding: 20px;
+    height: 20px;
+}
+#three{
+    padding: 20px;
+    height: 20px;
+}
+#two{
+    padding: 20px;
+    height: 20px;
+}
+#one{
+    padding: 20px;
+    height: 20px;
+}
+#zero{
+    padding: 20px;
+    height: 20px;
+    margin-top: -55px;
+}
+#add{
+    padding: 20px;
+    height: 20px;
+}
+#minus{
+    padding: 20px;
+    height: 20px;
+}
+#times{
+    padding: 20px;
+    height: 20px;
+}
+#divide{
+    padding: 20px;
+    height: 20px;
+    margin-top: -55px;
+}
+#dot{
+    padding: 20px;
+    height: 20px;
+    margin-top: -55px;
+}
+#pec{
+    padding: 20px ;
+    height: 20px;
+}
+#equl{
+    padding: 20px;
+    height: 102px;
+    border-radius: 2px;
+    border: none;
+}
+#delete{
+    padding: 20px;
+    height: 23px;
+    
+    
+}
+#cancel{
+    padding: 20px;
+    height: 10px;
+    
+}
+
